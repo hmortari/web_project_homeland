@@ -1,0 +1,45 @@
+.content {
+  /* margin: 0 auto; */
+  max-width: 830px;
+  width: 100%;
+  margin: 90px 148px 92px;
+  /* padding: 92px 0 92px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.content__intro {
+  /* display: flex;
+  align-items: flex-start;
+  flex-direction: column; */
+}
+.content__title {
+  max-width: 830px;
+  margin: 0 auto;
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 3.297rem;
+  line-height: 1.1;
+  padding-bottom: 40px;
+}
+
+.content__quote-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.42;
+  max-width: 738px;
+}
+.content__quote-text:last-child {
+  margin-top: 10px;
+  text-align: right;
+  padding-bottom: 32px;
+}
+.content__description {
+  max-width: 722px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.63;
+  text-align: left;
+}
