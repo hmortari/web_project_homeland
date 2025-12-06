@@ -19,11 +19,28 @@ a {
 * {
   box-sizing: border-box;
 }
-/* Page Setings */
+/* Page Settings */
 .page {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 1100px;
+  margin: 0 auto;
   font-family: "Inter", sans-serif;
   background: #2a2c2f;
-  max-width: 1280px;
-  padding: 34px 0 24px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .page {
+    min-width: 768px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 544px) {
 }
