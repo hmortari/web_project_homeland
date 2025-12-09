@@ -22,7 +22,7 @@ a {
 /* Page Settings */
 .page {
   width: 100%;
-  min-height: 100vh;
+  min-width: 320px;
   min-height: 1100px;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
@@ -30,17 +30,14 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5vh;
+  gap: 5.625rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 544px) {
   .page {
-    min-width: 768px;
+    min-width: 320px;
     width: 100%;
     padding: 0;
     margin: 0;
   }
-}
-
-@media screen and (max-width: 544px) {
 }
