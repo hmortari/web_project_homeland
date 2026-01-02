@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: 1fr 154px;
   grid-template-rows: auto;
+  padding-bottom: 118px;
 }
 
 .intro__title {
@@ -45,15 +46,19 @@
     margin: 0;
     grid-template-columns: 1fr;
     max-width: 100vw;
-    padding: 0 4%;
+    padding: 0 16px
+      calc(38px + (118px - 38px) * ((100vw - 544px) / (1280px - 544px)));
   }
   .intro__title {
-    font-size: 2.813rem;
+    font-size: calc(
+      2rem + (4.5rem - 2rem) * ((100vw - 544px) / (1280px - 544px))
+    );
   }
 }
 @media screen and (max-width: 544px) {
   .intro {
     min-width: 288px;
+    padding-bottom: 38px;
   }
   .intro__title {
     font-size: 2rem;
