@@ -31,6 +31,7 @@ a {
   flex-direction: column;
   /* align-items: center; */
   gap: 5.625rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 544px) {
