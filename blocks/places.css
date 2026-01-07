@@ -9,7 +9,7 @@
 .places__item {
   display: grid;
   grid-template-columns: 460px 1fr;
-  grid-template-rows: repeat(3, auto);
+  /* grid-template-rows: repeat(3, auto); */
   gap: 48px 40px;
   align-items: flex-start;
   vertical-align: bottom;
@@ -42,6 +42,7 @@
   grid-column: 1;
   grid-row: 2;
   width: 100%;
+  min-width: 320px;
   box-shadow: 10px 10px 25px 0px #00000080;
   object-fit: cover;
   aspect-ratio: 1 / 1;
@@ -64,7 +65,8 @@
 }
 
 .places__button {
-  width: 356px;
+  max-width: 356px;
+  min-width: 288px;
   height: 48px;
   background-color: blue;
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 100%);
@@ -121,7 +123,6 @@
     overflow: hidden;
     grid-column: 1;
     grid-row: 3;
-    /* min-width: 200px; */
     padding: 0;
   }
   .places__description {
@@ -131,10 +132,11 @@
     padding: 0 16px;
   }
   .places__button {
+    width: 288px;
     font-size: 14px;
-    width: 100%;
     grid-column: 1;
     grid-row: 5;
     padding: 0 16px;
+    justify-self: center;
   }
 }
