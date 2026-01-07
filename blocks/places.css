@@ -9,16 +9,14 @@
 .places__item {
   display: grid;
   grid-template-columns: 460px 1fr;
-  /* grid-template-rows: repeat(3, auto); */
   gap: 48px 40px;
   align-items: flex-start;
   vertical-align: bottom;
 }
 
 .places__title {
-  font-size: 72px;
-  line-height: 76px;
-  font-weight: 900;
+  font-size: 4.5rem;
+  line-height: 4.75rem;
   grid-column: 1;
   grid-row: 1;
 }
@@ -30,12 +28,12 @@
 }
 
 .places__artist-title {
-  font-size: 12px;
-  font-weight: 400px;
+  font-size: 0.75rem;
   color: #aaa;
 }
 .places__artist-name {
-  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
 }
 
 .places__image {
@@ -56,8 +54,7 @@
   display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-weight: 400px;
+  font-size: 1.125rem;
   line-height: 163%;
   gap: 25px;
   grid-column: 2;
@@ -70,6 +67,7 @@
   height: 48px;
   background-color: blue;
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 100%);
+  font-size: 1.125rem;
   color: white;
   margin: 0;
   padding: 0;
@@ -85,7 +83,27 @@
 
 @media screen and (max-width: 1024px) {
   .places {
-    /* padding: 16px; */
+    gap: 72px;
+  }
+  .places__item {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 28px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .places__title {
+    font-size: 2.625rem;
+    line-height: 2.875rem;
+  }
+  .places__artist-name {
+    font-size: 1.125rem;
+  }
+  .places__description {
+    font-size: 1rem;
+    line-height: 163%;
+  }
+  .places__button {
+    font-size: 1.125rem;
   }
 }
 
@@ -99,11 +117,12 @@
   .places__item {
     grid-template-columns: 1fr;
     row-gap: 30px;
+    padding: 0;
   }
 
   .places__title {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 2rem;
+    line-height: 2.25rem;
     grid-column: 1;
     grid-row: 1;
     padding: 0 16px;
@@ -126,14 +145,13 @@
     padding: 0;
   }
   .places__description {
-    font-size: 1rem;
     grid-column: 1;
     grid-row: 4;
     padding: 0 16px;
   }
   .places__button {
     width: 288px;
-    font-size: 14px;
+    font-size: 0.875rem;
     grid-column: 1;
     grid-row: 5;
     padding: 0 16px;
